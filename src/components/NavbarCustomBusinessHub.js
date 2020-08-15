@@ -16,7 +16,7 @@ function NavbarBusinessHub(props) {
                 </LinkContainer>
               </Nav.Item>
               <Nav.Item>
-                <LinkContainer to="/auth/signin">
+                <LinkContainer to="/covid-safe">
                   <Nav.Link active={false}>Regulations & Tips</Nav.Link>
                 </LinkContainer>
               </Nav.Item>
