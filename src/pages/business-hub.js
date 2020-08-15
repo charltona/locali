@@ -9,6 +9,7 @@ import pins from "../assets/qv-pin.png";
 import time from "../assets/qv-time.png";
 import Button from "react-bootstrap/Button";
 import CountUp from "react-countup";
+import { generateRandomCapacity, getRandomInt } from "../helpers/capacity";
 
 function BusinessHub(props) {
   return (
@@ -28,7 +29,7 @@ function BusinessHub(props) {
               </Col>
               <Col xs={12} lg={4} className="Col">
                 <img className="grow" src={capacity} />
-                <h3><CountUp end={12}/>/50</h3>
+                <h3><CountUp end={getRandomInt(50)}/>/50</h3>
                 <p>current capacity</p>
               </Col>
               <Col xs={12} lg={4} className="Col">

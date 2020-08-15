@@ -4,6 +4,10 @@
   align-items: center;
   padding: 12px;
 
+  @media (max-width:768px) {
+    flex-flow: column nowrap;
+  }
+
   .card-title {
     text-transform: capitalize;
   }
@@ -14,6 +18,9 @@
   .card-text {
     display: flex;
     justify-content: space-between;
+    @media (max-width:768px) {
+      flex-flow: column nowrap;
+    }
   }
 
   .card-col-right {
