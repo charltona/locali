@@ -24,9 +24,9 @@ function FeaturesSection(props) {
         <Features
           items={[
             {
-              title: "Explore",
+              title: "Stay safe & support local businesses",
               description:
-                "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
+                "Locali is the ultimate staycation. Stay COVID-safe while finding hidden gems in your area and earning badges! Register once and use Locali's secure, one touch check-in.",
               image:
                 "https://uploads.divjoy.com/undraw-personal_settings_kihd.svg",
             }

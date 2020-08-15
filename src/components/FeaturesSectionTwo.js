@@ -17,15 +17,15 @@ function FeaturesSection(props) {
         <Features
           items={[
             {
-              title: "Explore",
+              title: "The ultimate staycation",
               description:
-                "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
+                "Iso getting you down? Grab some friends and explore your own backyard. locali's live capacity indicator shows which businesses have space and which are at capacity. Never be turned away from brunch again!",
               image: "https://uploads.divjoy.com/undraw-having_fun_iais.svg",
             },
             {
-              title: "Explore",
+              title: "Get swept away on an adventure",
               description:
-                "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
+                "Paris or Milan may be off the cards, but sometimes you don't need to travel far for a great adventure. Sign up for locali today!",
               image: "https://uploads.divjoy.com/undraw-balloons_vxx5.svg",
             },
           ]}

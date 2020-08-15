@@ -4,6 +4,8 @@ import Container from "react-bootstrap/Container";
 import SectionHeader from "./SectionHeader";
 import Button from "react-bootstrap/Button";
 import "./HeroSection2.scss";
+import human from "./../assets/human.png";
+import human2 from "./../assets/human2.png";
 
 function HeroSection2(props) {
   return (
@@ -38,6 +40,8 @@ function HeroSection2(props) {
           {props.buttonTwoText}
         </Button>
       </Container>
+      <img src={human} className="human"/>
+      <img src={human2} className="human2"/>
     </Section>
   );
 }

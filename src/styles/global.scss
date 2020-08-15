@@ -71,3 +71,53 @@ $grid-breakpoints: (
   font-size: 35px;
   margin-bottom: 0;
 }
+
+.HeroSection2 {
+  background-image: url("../assets/map2.jpg");
+  background-size: cover;
+
+  .human {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .human2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  @media (max-width: 1120px) {
+    .human, .human2 {
+      display: none;
+    }
+  }
+}
+
+.FeatureColumns {
+  img {
+    margin-bottom: 20px;
+  }
+
+  h3 span {
+    font-family: "Rekkt", sans-serif;
+    letter-spacing: 1px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+}
+
+.FeatureColumns {
+  img {
+    max-width: 100%;
+  }
+}
