@@ -29,7 +29,7 @@ function MyAccount(props) {
   const [claimed, toggleClaimed] = React.useState(false);
 
   return (
-    <div style={{ padding: "50px", width: "100%" }} className="MyAccount">
+    <div style={{ width: "100%" }} className="MyAccount PageYeet">
       <Container>
         <h1>My Account</h1>
         <NavbarCustomer />

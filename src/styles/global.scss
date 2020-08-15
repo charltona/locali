@@ -226,6 +226,7 @@ $grid-breakpoints: (
 }
 
 .MyAccount {
+
   h1 {
     font-family: "Rekkt", sans-serif;
     margin-bottom: 30px;
@@ -311,6 +312,14 @@ $grid-breakpoints: (
 
 .update {
   margin: 15px 0;
+}
+
+.Page-Yeet {
+  padding: 50px;
+
+  @media (max-width: 768px) {
+    padding: 0!important;
+  }
 }
 
 .CovidSafe {
