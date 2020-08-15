@@ -3,6 +3,7 @@ import "./Listing.scss";
 import { Card } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { covidSafeOptions, generateRandomCapacity } from "../helpers/capacity";
+import { Link } from "../util/router";
 
 export default function Listing(props) {
   const result = props.result
@@ -37,14 +38,14 @@ export default function Listing(props) {
         <Card.Text>
 
           <div className="card-col-left">
-            <p className="address">{result.address.toLowerCase()} {result.address && "-"} {result.suburb.charAt(0).toUpperCase() + result.suburb.slice(1).toLowerCase()}</p>
+            <p className="address">🌏 {result.address.toLowerCase()} {result.address && "-"} {result.suburb.charAt(0).toUpperCase() + result.suburb.slice(1).toLowerCase()}</p>
             <p dangerouslySetInnerHTML={{__html: result.description}}></p>
             {result.locationType === "business" && <p><strong>COVIDSafe Procedures:</strong> {result.type === "Cafes" && covidSafeOptions.cafe.join(", ")} {result.type !== "Cafes" && covidSafeOptions.other.join(", ")}</p>}
-            {result.specialOffer && <p className="special-offer"><strong>Special Offers:</strong> {result.specialOffer}</p>}
+            {result.specialOffer && <p className="special-offer"><strong>Special Offers:</strong> 🎁 {result.specialOffer}</p>}
           </div>
           <div className="card-col-right">
-            <Button>Check In</Button>
-            <div className="capacity">{result.locationType === "business" && <span className={capacity > 75 && "capacity-warning"}>Capacity: {capacity}%</span>}</div>
+            <Link to={"/location/" + result.id}> <Button>☑ Check In </Button></Link>
+            <div className="capacity">{result.locationType === "business" && <span className={capacity > 75 && "capacity-warning"}>👨‍👩‍👧 Capacity: {capacity}% </span>}</div>
           </div>
         </Card.Text>
       </Card.Body>
