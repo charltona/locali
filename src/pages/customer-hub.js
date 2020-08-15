@@ -10,7 +10,7 @@ import BusinessSearch from "../components/BusinessSearch";
 function CustomerHub(props) {
   let results = [];
 
-  if (props.match.params.name) {
+  if (props.match.params.name !== "undefined") {
     results = _.filter(properties, function(a) {
       return a.suburb.toLowerCase().indexOf((props.match.params.name).toLowerCase()) !== -1;
     });
@@ -27,6 +27,7 @@ function CustomerHub(props) {
       <p>Browse over 9,000 places to visit in your community<br/>
       Remember to check-in and check-out when you leave</p>
     </div>
+      {results.length == 0 && <h2>Oops... we couldn't anything for {props.match.params.name}</h2>}
 
       {
         results.map((result, key) => {
