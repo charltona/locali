@@ -42,7 +42,7 @@ function Newsletter(props) {
                 size={props.size}
                 type="submit"
               >
-                {props.buttonText}
+                Search
               </Button>
             </Col>
           </Form.Row>
