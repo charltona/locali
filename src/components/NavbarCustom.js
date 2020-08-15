@@ -24,12 +24,12 @@ function NavbarCustom(props) {
           <Nav>
               <Nav.Item>
                 <LinkContainer to="/business-hub">
-                  <Nav.Link active={false}>For Businesses</Nav.Link>
+                  <Nav.Link active={false}>Business Login</Nav.Link>
                 </LinkContainer>
               </Nav.Item>
               <Nav.Item>
                 <LinkContainer to="/auth/signin">
-                  <Nav.Link active={false}>Sign in</Nav.Link>
+                  <Nav.Link active={false}>Customer Login</Nav.Link>
                 </LinkContainer>
               </Nav.Item>
           </Nav>
