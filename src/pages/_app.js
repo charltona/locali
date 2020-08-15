@@ -17,6 +17,7 @@ import "./../util/analytics.js";
 import { ProvideAuth } from "./../util/auth.js";
 import CustomerHub from "./customer-hub";
 import Location from "./location";
+import CovidSafe from "./covid-safe";
 
 function App(props) {
   return (
@@ -52,6 +53,8 @@ function App(props) {
             <Route exact path="/settings/:section" component={SettingsPage} />
 
             <Route exact path="/auth/:type" component={AuthPage} />
+
+            <Route exact path="/covid-safe" component={CovidSafe} />
 
             <Route component={NotFoundPage} />
           </Switch>

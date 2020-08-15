@@ -1,8 +1,8 @@
 import React from "react";
 import Section from "./Section";
 import Container from "react-bootstrap/Container";
-import SectionHeader from "./SectionHeader";
 import Features from "./Features";
+import meeting from "./../assets/meeting.png";
 
 function FeaturesSection(props) {
   return (
@@ -28,6 +28,14 @@ function FeaturesSection(props) {
                 "Paris or Milan may be off the cards, but sometimes you don't need to travel far for a great adventure. Sign up for locali today!",
               image: "https://uploads.divjoy.com/undraw-balloons_vxx5.svg",
             },
+            {
+              title: "Stay COVID-safe",
+              description:
+                "When you use locali you can easily see which measures businesses have in place, from outdoor dining to extra cleaning measures.",
+              image: meeting,
+              buttonLink: "/covid-safe",
+              buttonText: "Read more"
+            }
           ]}
         />
       </Container>

@@ -5,7 +5,6 @@ import FeaturesSectionTwo from "./../components/FeaturesSectionTwo";
 import NewsletterSection from "./../components/NewsletterSection";
 import FeaturesColumns from "./../components/FeaturesColumns";
 import { useRouter } from "./../util/router.js";
-import Container from "react-bootstrap/Container";
 
 function IndexPage(props) {
   const router = useRouter();

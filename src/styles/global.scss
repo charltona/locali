@@ -313,6 +313,33 @@ $grid-breakpoints: (
   margin: 15px 0;
 }
 
+.CovidSafe {
+  h1 {
+    font-family: "Rekkt", sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  img {
+    height: 100%;
+  }
+
+  .img-container {
+    height: 144px;
+    margin-bottom: 15px;
+  }
+
+  .Col {
+    margin-bottom:30px;
+    text-align: center;
+    padding: 30px;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .grow { transition: all .2s ease-in-out; }
 
 .grow:hover { transform: scale(1.1); }
