@@ -4,6 +4,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import chart from "../assets/chart.svg";
+import capacity from "../assets/qv-capacity.png";
+import pins from "../assets/qv-pin.png";
+import time from "../assets/qv-time.png";
 import Button from "react-bootstrap/Button";
 
 function BusinessHub(props) {
@@ -18,17 +21,17 @@ function BusinessHub(props) {
           <Container className="Data">
             <Row className="align-items-center">
               <Col xs={12} lg={4} className="Col">
-                <img className="bounce" src="https://via.placeholder.com/140x100" />
+                <img className="bounce" src={pins} />
                 <h3>156</h3>
                 <p>check-ins</p>
               </Col>
               <Col xs={12} lg={4} className="Col">
-                <img className="grow" src="https://via.placeholder.com/140x100" />
+                <img className="grow" src={capacity} />
                 <h3>12/50</h3>
                 <p>current capacity</p>
               </Col>
               <Col xs={12} lg={4} className="Col">
-                <img className="gelatine" src="https://via.placeholder.com/140x100" />
+                <img className="gelatine" src={time} />
                 <h3>22 mins</h3>
                 <p>average time in store</p>
               </Col>
