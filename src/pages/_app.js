@@ -54,13 +54,13 @@ function App(props) {
           </Switch>
 
           <Footer
-            bg="light"
+            bg="yellow"
             textColor="dark"
             size="sm"
             bgImage=""
             bgImageOpacity={1}
             description=""
-            copyright="© 2020 Locali"
+            copyright="© 2020 locali"
           />
         </>
       </Router>

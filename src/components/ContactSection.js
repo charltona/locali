@@ -25,6 +25,7 @@ function ContactSection(props) {
           spaced={true}
           className="text-center"
         />
+        <p>Questions about how locali can help your business? Get in touch and we'll get back to you ASAP.</p>
         <Contact
           showNameField={props.showNameField}
           buttonText={props.buttonText}
