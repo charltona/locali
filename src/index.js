@@ -1,44 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import SplashScreen from "./screens/splash";
-import Header from "components/header";
-import {ThemeProvider} from "@material-ui/core/styles";
-import theme from "./config/theme";
+import React from "react";
+import ReactDom from "react-dom";
+import App from "./pages/_app";
+import * as serviceWorker from "./serviceWorker";
 
+ReactDom.render(<App />, document.getElementById("root"));
 
-export default function App(){
-  return (
-    <Router>
-      <ThemeProvider theme={theme}>
-      <CssBaseline/>
-      <Header/>
-      <Switch>
-        <Route path="/search">
-          <h1>Business Results Page</h1>
-        </Route>
-        <Route path="/check-in">
-          <h1>Single Business Listing Page</h1>
-        </Route>
-        <Route path="/user">
-          <h1>User Profile Page</h1>
-        </Route>
-        <Route path="/dashboard">
-          <h1>Business Dashboard Page</h1>
-        </Route>
-        <Route path="/">
-          <SplashScreen/>
-        </Route>
-      </Switch>
-      </ThemeProvider>
-    </Router>
-  )
-}
-
-ReactDOM.render(<App/>, document.getElementById('app'));
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
