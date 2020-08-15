@@ -16,7 +16,6 @@ function getRandomInt(max) {
 export function prettyCapitals(value) {
   value = value.toLowerCase();
   let array = value.split(" ");
-  console.log(array);
 
   let prettied = [];
   array.forEach(i => prettied.push(i.chatAt(0).toUpperCase()+i.slice(1)));
