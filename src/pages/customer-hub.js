@@ -1,6 +1,10 @@
 import React from "react";
 import properties from "../data/locali_master_data.json";
 import _ from "lodash";
+import CardDeck from "react-bootstrap/CardDeck";
+import Listing from "../components/Listing"
+import Container from "react-bootstrap/Container";
+import CardColumns from "react-bootstrap/CardColumns";
 
 function CustomerHub(props) {
   let results = [];
@@ -11,22 +15,21 @@ function CustomerHub(props) {
     });
   }
 
-  console.log(props);
-  return (<>
+  return (<Container>
     <div style={{ padding: "50px", width: "100%", textAlign: "center" }}>
-      Customer Hub
+      <h1 className="logo">Customer Hub</h1>
+      <p>Browse over 9,000 places to visit in your community<br/>
+      Remember to check-in and check-out when you leave</p>
+
     </div>
 
       {
-        results.map(result => {
-          return <h2>{result.name} - {result.locationType}</h2>
+        results.map((result, key) => {
+          return <Listing result={result} key={key}/>
         })
       }
 
-    {console.log(_.filter(properties, function(a) {
-      return a.suburb.toLowerCase().indexOf((props.match.params.name).toLowerCase()) !== -1;
-    }))};
-    </>
+    </Container>
   );
 }
 

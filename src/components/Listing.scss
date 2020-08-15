@@ -1,0 +1,34 @@
+.listing-card {
+  margin-bottom: 12px;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 12px;
+
+  .card-title {
+    text-transform: capitalize;
+  }
+  .address {
+    text-transform: capitalize;
+  }
+
+  .card-text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-col-right {
+    min-width: 150px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .capacity {
+    margin-top: 20px;
+
+    .capacity-warning {
+      color: red;
+      font-weight: bold;
+    }
+  }
+}
