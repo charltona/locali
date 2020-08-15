@@ -98,6 +98,8 @@ $grid-breakpoints: (
 }
 
 .FeatureColumns {
+  text-align: center;
+
   img {
     margin-bottom: 20px;
   }
@@ -115,6 +117,16 @@ $grid-breakpoints: (
   li {
     margin-bottom: 5px;
     font-size: 18px;
+  }
+
+  .btn {
+    background-color: $yellow;
+    color: $dark;
+    border-color: $yellow;
+  }
+
+  .btn:hover {
+    background-color: #da9100;
   }
 }
 
@@ -240,6 +252,12 @@ $grid-breakpoints: (
     margin-top: 30px;
     border-radius: 10px;
   }
+
+  .explore {
+    background-color: #2f3676;
+    border-color: #2f3676;
+    margin-bottom: 15px;
+  }
 }
 
 /* Yes, I'm duplicating these styles */
@@ -314,7 +332,7 @@ $grid-breakpoints: (
   margin: 15px 0;
 }
 
-.Page-Yeet {
+.PageYeet {
   padding: 50px;
 
   @media (max-width: 768px) {

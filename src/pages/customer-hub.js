@@ -26,6 +26,7 @@ function CustomerHub(props) {
       <h1 className="logo">Customer Hub</h1>
       <p>Browse over 9,000 places to visit in your community<br/>
       Remember to check-in and check-out when you leave</p>
+      <BusinessSearch />
     </div>
 
       {

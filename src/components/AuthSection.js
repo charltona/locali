@@ -57,6 +57,7 @@ function AuthSection(props) {
           spaced={true}
           className="text-center"
         />
+        <p>Click below to sign in with a demo account.</p>
         <Auth
           type={currentType}
           typeValues={typeValues}

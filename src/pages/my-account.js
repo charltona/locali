@@ -34,8 +34,9 @@ function MyAccount(props) {
         <h1>My Account</h1>
         <NavbarCustomer />
         <div className="WelcomeCard">
-          <h3>Welcome back, John!</h3>
+          <h3>Welcome back, Jane!</h3>
           <p>Here's an overview of your locali account today...</p>
+          <Button href="/search/new%20farm" className="explore">Show me what's nearby</Button>
         </div>
         <Container>
           <Row className="">
@@ -46,11 +47,11 @@ function MyAccount(props) {
               </div>
               <form>
                   <label for="fname">First name</label>
-                  <input type="text" id="fname" name="fname" value="John" disabled="disabled"/>
+                  <input type="text" id="fname" name="fname" value="Jane" disabled="disabled"/>
                   <label for="lname">Last name</label>
-                  <input type="text" id="lname" name="lname" value="Appleby" disabled="disabled"/>
+                  <input type="text" id="lname" name="lname" value="Doe" disabled="disabled"/>
                   <label for="address">Address</label>
-                  <input type="text" id="address" name="address" value="42 Wallaby Way, Sydney NSW 2000" disabled="disabled"/>
+                  <input type="text" id="address" name="address" value="14 Lime Street, New Farm QLD 4005" disabled="disabled"/>
                   <label for="phone">Phone number</label>
                   <input type="text" id="phone" name="phone" value="1234 1324" disabled="disabled"/>
                   <label for="phone">Subscribe me to emails and updates</label>
@@ -65,19 +66,19 @@ function MyAccount(props) {
               <h4>My Badges</h4>
               <Row>
                 <Col sm={4} xs={6} className="Badge">
-                  <img src={explorer} className="grow"></img>
+                  <img src={pioneer} className="grow" title="Visit 1 place"></img>
                 </Col>
                 <Col sm={4} xs={6} className="Badge">
-                  <img src={scout} className="grow"></img>
+                  <img src={scout} className="grow" title="Visit 5 places"></img>
                 </Col>
                 <Col sm={4} xs={6} className="Badge">
-                  <img src={pioneer} className="grow"></img>
+                  <img src={explorer} className="grow" title="Visit 10 places"></img>
                 </Col>
                 <Col sm={4} xs={6} className="Badge">
-                  <img src={heritage} className="grow"></img>
+                  <img src={heritage} className="grow" title="Visit a place of indigenous culture"></img>
                 </Col>
                 <Col sm={4} xs={6} className="Badge">
-                  <img src={curator} className="grow"></img>
+                  <img src={curator} className="grow" title="Visit a place of art"></img>
                 </Col>
                 {claimed && <Col sm={4} xs={6} className="Badge">
                   <Lottie
@@ -86,6 +87,7 @@ function MyAccount(props) {
                     width={144}
                     isStopped={false}
                     isPaused={false}
+                    title="Visit a café"
                   />
                 </Col>
                 }
