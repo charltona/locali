@@ -9,6 +9,12 @@ const theme = createMuiTheme({
     secondary: {
       main: "#000"
     }
+  },
+  typography: {
+    h1: {
+      fontFamily: '"Reckt", "Open Sans"',
+      fontWeight: 500
+    }
   }
 })
 
