@@ -62,7 +62,7 @@ function App(props) {
             size="sm"
             bgImage=""
             bgImageOpacity={1}
-            description=""
+            description="GovHack Project by Big Sunday"
             copyright="© 2020 locali"
           />
         </>

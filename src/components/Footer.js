@@ -60,7 +60,8 @@ function Footer(props) {
               </span>
             </a>
           </div>
-          <div className="copyright left">{props.copyright}</div>
+
+          <div className="copyright left">{props.copyright}<br/>{props.description}</div>
         </div>
       </Container>
     </Section>
