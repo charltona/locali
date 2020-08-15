@@ -259,10 +259,16 @@ $grid-breakpoints: (
 .AccountDetails {
   padding: 30px;
 
- form {
-   display: flex;
-   flex-direction: column;
- }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    border-radius: 10px;
+    border-color: rgba(0,0,0,0.2);
+    padding: 4px;
+  }
 }
 
 .Badges {
