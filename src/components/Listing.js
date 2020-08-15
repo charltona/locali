@@ -25,6 +25,21 @@ export default function Listing(props) {
     default:
       image = "/images/park.png"
   }
+  let capacityImage;
+  switch (true) {
+    case capacity <= 50:
+      capacityImage = "/images/bar-3.png"
+      break;
+    case capacity > 50 && capacity <= 80:
+      capacityImage ="/images/bar-2.png"
+      break;
+    case capacity > 80:
+      capacityImage = "/images/bar-1.png"
+      break;
+    default:
+      capacityImage = "/images/bar-3.png"
+      break;
+  }
 
   return (
     <Card className="listing-card">
@@ -45,7 +60,7 @@ export default function Listing(props) {
           </div>
           <div className="card-col-right">
             <Link to={"/location/" + result.id}> <Button>☑ Check In </Button></Link>
-            <div className="capacity">{result.locationType === "business" && <span className={capacity > 75 && "capacity-warning"}>👨‍👩‍👧 Capacity: {capacity}% </span>}</div>
+            <div className="capacity">{result.locationType === "business" && <span className={capacity > 75 && "capacity-warning"}><img src={capacityImage}/> Capacity: {capacity}% </span>}</div>
           </div>
         </Card.Text>
       </Card.Body>
