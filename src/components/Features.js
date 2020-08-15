@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import SectionHeader from "./SectionHeader";
 import Image from "react-bootstrap/Image";
+import Button from "react-bootstrap/Button";
 import "./Features.scss";
 
 function Features(props) {
@@ -18,6 +19,7 @@ function Features(props) {
               size={3}
               className="text-center text-lg-left"
             />
+            {item.buttonText && item.buttonLink && <Button href={item.buttonLink} style={{ background: "#ffaa01", borderColor: "#ffaa01", color: "#343a40" }}>Read more</Button>}
           </Col>
           <Col>
             <figure className="Features__image-container">
