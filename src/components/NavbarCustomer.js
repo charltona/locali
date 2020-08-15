@@ -15,11 +15,6 @@ function NavbarCustomer(props) {
                   <Nav.Link active={false}>My Account</Nav.Link>
                 </LinkContainer>
               </Nav.Item>
-              <Nav.Item>
-                <LinkContainer to="/badges">
-                  <Nav.Link active={false}>Badges</Nav.Link>
-                </LinkContainer>
-              </Nav.Item>
           </Nav>
       </Container>
     </Navbar>

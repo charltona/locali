@@ -250,6 +250,57 @@ $grid-breakpoints: (
   border-radius: 10px;
 }
 
+.AccountDetails {
+  padding: 30px;
+
+ form {
+   display: flex;
+   flex-direction: column;
+ }
+}
+
+.Badges {
+  padding: 30px;
+
+  img {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .row {
+    justify-content: start;
+  }
+
+  .Badge {
+    text-align: center;
+  }
+
+  .Unclaimed {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.Verification {
+  border: 1px solid $success;
+  border-radius: 10px;
+  color: $success;
+  padding: 7px;
+  margin: 15px 0;
+
+  h6 {
+    margin-bottom: 0;
+  }
+}
+
+.Disclaimer {
+  margin-top: 15px;
+}
+
+.update {
+  margin: 15px 0;
+}
+
 .grow { transition: all .2s ease-in-out; }
 
 .grow:hover { transform: scale(1.1); }
