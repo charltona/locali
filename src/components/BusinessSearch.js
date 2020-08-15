@@ -19,7 +19,7 @@ export default function BusinessSearch(props){
   }
 
   return (
-    <Form onSubmit={handleSubmit(onSubmit)}>
+    <Form onSubmit={handleSubmit(onSubmit)} className="BusinessSearch">
       <Form.Row>
         <Col>
           <FormField
