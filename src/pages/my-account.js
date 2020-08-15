@@ -44,13 +44,13 @@ function MyAccount(props) {
               </div>
               <form>
                   <label for="fname">First name</label>
-                  <input type="text" id="fname" name="fname"/>
+                  <input type="text" id="fname" name="fname" value="Gov"/>
                   <label for="lname">Last name</label>
-                  <input type="text" id="lname" name="lname"/>
+                  <input type="text" id="lname" name="lname" value="Hack"/>
                   <label for="address">Address</label>
-                  <input type="text" id="address" name="address"/>
+                  <input type="text" id="address" name="address" value="42 Wallaby Way, Sydney NSW 2000" />
                   <label for="phone">Phone number</label>
-                  <input type="text" id="phone" name="phone"/>
+                  <input type="text" id="phone" name="phone" value="1234 5678" />
                   <label for="phone">Subscribe me to emails and updates</label>
                   <input type="checkbox" checked></input>
                   <Button variant="yellow" className="update">Update details</Button>
