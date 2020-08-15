@@ -13,7 +13,7 @@ import { generateRandomCapacity, getRandomInt } from "../helpers/capacity";
 
 function BusinessHub(props) {
   return (
-    <div style={{ padding: "50px", width: "100%" }} className="BusinessHub">
+    <div style={{ width: "100%" }} className="BusinessHub PageYeet">
       <Container>
         <h1>Business Dashboard</h1>
         <NavbarBusinessHub />

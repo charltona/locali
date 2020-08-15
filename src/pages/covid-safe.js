@@ -12,7 +12,7 @@ import cleaning from "./../assets/cleaning.png";
 function CovidSafe(props) {
 
   return (
-    <div style={{ padding: "50px", width: "100%" }} className="CovidSafe">
+    <div style={{ width: "100%" }} className="CovidSafe PageYeet">
       <Container>
         <h1>COVID Safe Practices</h1>
         <p>Businesses registered with locali undertake precautions to keep our local communities safe. Learn more about the practices locali endorses...</p>
