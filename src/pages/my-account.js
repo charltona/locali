@@ -44,16 +44,16 @@ function MyAccount(props) {
               </div>
               <form>
                   <label for="fname">First name</label>
-                  <input type="text" id="fname" name="fname" value="Gov"/>
+                  <input type="text" id="fname" name="fname" value="John" disabled="disabled"/>
                   <label for="lname">Last name</label>
-                  <input type="text" id="lname" name="lname" value="Hack"/>
+                  <input type="text" id="lname" name="lname" value="Appleby" disabled="disabled"/>
                   <label for="address">Address</label>
-                  <input type="text" id="address" name="address" value="42 Wallaby Way, Sydney NSW 2000" />
+                  <input type="text" id="address" name="address" value="42 Wallaby Way, Sydney NSW 2000" disabled="disabled"/>
                   <label for="phone">Phone number</label>
-                  <input type="text" id="phone" name="phone" value="1234 5678" />
+                  <input type="text" id="phone" name="phone" value="1234 1324" disabled="disabled"/>
                   <label for="phone">Subscribe me to emails and updates</label>
                   <input type="checkbox" checked></input>
-                  <Button variant="yellow" className="update">Update details</Button>
+                  <Button variant="yellow" className="update">Verify with greenID✅</Button>
               </form>
               <div className="Disclaimer">
                 <em>We never share your personal data with businesses.</em>
