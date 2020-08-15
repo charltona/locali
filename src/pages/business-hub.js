@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import chart from "../assets/chart.svg";
 import Button from "react-bootstrap/Button";
+import CountUp from "react-countup";
 
 function BusinessHub(props) {
   return (
@@ -19,17 +20,17 @@ function BusinessHub(props) {
             <Row className="align-items-center">
               <Col xs={12} lg={4} className="Col">
                 <img className="bounce" src="https://via.placeholder.com/140x100" />
-                <h3>156</h3>
+                <h3><CountUp end={156}/></h3>
                 <p>check-ins</p>
               </Col>
               <Col xs={12} lg={4} className="Col">
                 <img className="grow" src="https://via.placeholder.com/140x100" />
-                <h3>12/50</h3>
+                <h3><CountUp end={12}/>/50</h3>
                 <p>current capacity</p>
               </Col>
               <Col xs={12} lg={4} className="Col">
                 <img className="gelatine" src="https://via.placeholder.com/140x100" />
-                <h3>22 mins</h3>
+                <h3><CountUp end={22}/> mins</h3>
                 <p>average time in store</p>
               </Col>
             </Row>
