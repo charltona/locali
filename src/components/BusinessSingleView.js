@@ -29,7 +29,8 @@ function BusinessSingleView(props) {
       <Container className="business-view-section-container">
         <Row>
           <Col>
-            <h1>{result.name}</h1>
+            <h1 style={{display:"inline-block", verticalAlign: "middle", marginRight: "20px"}}>{result.name}</h1> {checkedIn ? <Button  variant="secondary" onClick={() => {setCheckedIn(false); toggleShowB(true); toggleShowA(false)}}>Check-out</Button>:<Button onClick={() => {setCheckedIn(true);toggleShowA(true)}}>Check-in</Button>}
+
             <div>
               {result.address}<br/>
               {result.suburb}<br/>
@@ -39,14 +40,14 @@ function BusinessSingleView(props) {
             </div>
           </Col>
           <Col>
-            {checkedIn ? <Button  variant="secondary" onClick={() => {setCheckedIn(false); toggleShowB(true); toggleShowA(false)}}>Check-out</Button>:<Button onClick={() => {setCheckedIn(true);toggleShowA(true)}}>Check-in</Button>}
+
 
           </Col>
 
           <Toast show={showA} onClose={() => toggleShowA(false)} style={{
             position: 'absolute',
-            top: 0,
-            right: 0,
+            top: 10,
+            right: 10,
           }}>
             <Toast.Header>
               <strong className="mr-auto">Thanks!</strong>
@@ -57,8 +58,8 @@ function BusinessSingleView(props) {
           </Toast>
           <Toast show={showB} onClose={() => toggleShowB(false)} style={{
             position: 'absolute',
-            top: 0,
-            right: 0,
+            top: 10,
+            right: 10,
           }}>
             <Toast.Header>
               <strong className="mr-auto">See you again soon!</strong>

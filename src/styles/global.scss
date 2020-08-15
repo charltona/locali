@@ -133,6 +133,12 @@ $grid-breakpoints: (
   }
 }
 
+.business-view-section-container {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding:24px
+}
+
 .BusinessHub {
   h1 {
     font-family: "Rekkt", sans-serif;
