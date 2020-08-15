@@ -16,6 +16,7 @@ import Footer from "./../components/Footer";
 import "./../util/analytics.js";
 import { ProvideAuth } from "./../util/auth.js";
 import CustomerHub from "./customer-hub";
+import Location from "./location";
 
 function App(props) {
   return (
@@ -43,6 +44,8 @@ function App(props) {
             <Route exact path="/business-hub" component={BusinessHub} />
 
             <Route exact path="/search/:name" component={CustomerHub} />
+
+            <Route exact path="/location/:id" component={Location} />
 
             <Route exact path="/dashboard" component={DashboardPage} />
 

@@ -23,7 +23,7 @@ export function prettyCapitals(value) {
 }
 
 export const covidSafeOptions = {
-  cafe: ["Takeaway", "Hand Santiser", "Outdoor Dining", "Staff Wearing Masks"],
-  other: ["Hand Santiser", "Staff Wearing Masks"]
+  cafe: ["🍟 Takeaway", "🙌 Hand Santiser", "⛱ Outdoor Dining", "😷 Staff Wearing Masks"],
+  other: ["🙌 Hand Santiser", "😷 Staff Wearing Masks"]
 }
 
