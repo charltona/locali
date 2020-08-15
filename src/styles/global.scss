@@ -12,6 +12,8 @@ $theme-colors: (
   "dark": #343a40,
   "white": #ffffff,
   "transparent": transparent,
+  "purple": #2f3676,
+  "yellow": #ffaa01
 );
 
 // TEXT
@@ -38,6 +40,11 @@ $grid-breakpoints: (
 // IMPORT FONT AWESOME
 @import url("https://use.fontawesome.com/releases/v5.10.1/css/all.css");
 
+@font-face {
+  font-family: 'Rekkt';
+  src: url("./Recoleta-Bold.ttf") format('truetype');
+};
+
 #root {
   // Full height of screen and flex so that we can push footer
   // to the bottom even if content is shorter than screen
@@ -53,4 +60,14 @@ $grid-breakpoints: (
   > * {
     flex-shrink: 0;
   }
+}
+
+.hero2-section-container {
+  text-align: center;
+}
+
+.logo {
+  font-family: "Rekkt", sans-serif;
+  font-size: 35px;
+  margin-bottom: 0;
 }

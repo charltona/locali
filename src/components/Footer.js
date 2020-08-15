@@ -17,9 +17,7 @@ function Footer(props) {
       <Container>
         <div className="FooterComponent__inner">
           <div className="brand left">
-            <Link to="/">
-              <img src={props.logo} alt="Logo" />
-            </Link>
+              <p className="logo">locali</p>
           </div>
           <div className="links right">
             <Link to="/about">About</Link>

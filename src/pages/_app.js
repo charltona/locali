@@ -3,9 +3,11 @@ import "./../styles/global.scss";
 import NavbarCustom from "./../components/NavbarCustom";
 import IndexPage from "./index";
 import AboutPage from "./about";
+import BusinessHub from "./business-hub";
 import FaqPage from "./faq";
 import ContactPage from "./contact";
 import DashboardPage from "./dashboard";
+import MyAccount from "./my-account";
 import SettingsPage from "./settings";
 import AuthPage from "./auth";
 import { Switch, Route, Router } from "./../util/router.js";
@@ -35,6 +37,10 @@ function App(props) {
 
             <Route exact path="/contact" component={ContactPage} />
 
+            <Route exact path="/my-account" component={MyAccount} />
+
+            <Route exact path="/business-hub" component={BusinessHub} />
+
             <Route exact path="/dashboard" component={DashboardPage} />
 
             <Route exact path="/settings/:section" component={SettingsPage} />
@@ -50,9 +56,8 @@ function App(props) {
             size="sm"
             bgImage=""
             bgImageOpacity={1}
-            description="A short description of what you do here"
-            copyright="© 2019 Company"
-            logo="https://uploads.divjoy.com/logo.svg"
+            description=""
+            copyright="© 2020 Locali"
           />
         </>
       </Router>
