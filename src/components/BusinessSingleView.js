@@ -11,11 +11,11 @@ import { covidSafeOptions } from "../helpers/capacity";
 import Toast from "react-bootstrap/Toast";
 
 function BusinessSingleView(props) {
-  console.log(props);
   let result = props.result;
 
   const [checkedIn, setCheckedIn] = React.useState(false);
   const [showA, toggleShowA] = React.useState(false);
+  const [showB, toggleShowB] = React.useState(false);
 
   return (
     <Section
@@ -39,7 +39,7 @@ function BusinessSingleView(props) {
             </div>
           </Col>
           <Col>
-            {checkedIn ? <Button  variant="secondary" onClick={() => setCheckedIn(false)}>Check-out</Button>:<Button onClick={() => {setCheckedIn(true);toggleShowA(true)}}>Check-in</Button>}
+            {checkedIn ? <Button  variant="secondary" onClick={() => {setCheckedIn(false); toggleShowB(true); toggleShowA(false)}}>Check-out</Button>:<Button onClick={() => {setCheckedIn(true);toggleShowA(true)}}>Check-in</Button>}
 
           </Col>
 
@@ -52,7 +52,20 @@ function BusinessSingleView(props) {
               <strong className="mr-auto">Thanks!</strong>
 
             </Toast.Header>
-            <Toast.Body>You've securely checked in to {result.name}</Toast.Body>
+            <Toast.Body>You've securely checked in to {result.name}<br/>
+            Remember to checkout to earn your badge!</Toast.Body>
+          </Toast>
+          <Toast show={showB} onClose={() => toggleShowB(false)} style={{
+            position: 'absolute',
+            top: 0,
+            right: 0,
+          }}>
+            <Toast.Header>
+              <strong className="mr-auto">See you again soon!</strong>
+
+            </Toast.Header>
+            <Toast.Body>You've securely checked out of {result.name} and <br/>
+              earned your first badge! 🌟</Toast.Body>
           </Toast>
         </Row>
       </Container>
