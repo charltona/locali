@@ -54,7 +54,28 @@ function CovidSafe(props) {
             <p>Additional care should be taken during the cleaning of the premises of each business to reduce the risk of illness</p>
           </Col>
         </Row>
-      </Container>
+          <h2>Tips for Businesses</h2>
+          <p>COVID has had a huge impact on local businesses. Small businesses are a major employer in the private sector within Australia.</p>
+          <p>Here are some helpful tips that will give your small business a boost during times of lockdowns, isolation and social distancing.</p>
+          <ul>
+            <li>Sign up for locali! Customers sign up once and are fully verified using green ID</li>
+            <li>Set your capacity limit using your locali dashboard</li>
+            <li>Display a locali sticker on the door or window of your business</li>
+            <li>Considering adding discounts or specials when users check in using locali</li>
+            <li>Set any additional measures you're taking using the COVID-safe measures in your locali dashboard</li>
+            <li>Educate your staff about government regulations and requirements (see the below section for more info)</li>
+            <li>Be accepting of customer's choices if they choose to wear a mask inside your premises</li>
+          </ul>
+          <p>The above tips will help assist you in operating in COVID-safe way!</p>
+          <h2>Resources for Businesses</h2>
+          <ul className="resources">
+            <li><a href="https://business.gov.au/Risk-management/Emergency-management/Coronavirus-information-and-support-for-business" target="_blank">Coronavirus information and support for business</a></li>
+            <li><a href="https://www.safeworkaustralia.gov.au/collection/covid-19-resource-kit" target="_blank">COVID-19 Resource Kit - Safe Work Australia</a></li>
+            <li><a href="https://www.ato.gov.au/general/covid-19/support-for-businesses-and-employers/" target="_blank">Support for businesses and employers</a></li>
+            <li><a href="https://www.ato.gov.au/General/JobKeeper-Payment/Employers/" target="_blank">JobKeeper Information for Employers</a></li>
+            <li><a href="https://www.ato.gov.au/General/JobKeeper-Payment/In-detail/Employers--frequently-asked-JobKeeper-questions/" target="_blank">JobKeeper FAQS</a></li>
+            </ul>
+        </Container>
     </div>
   );
 }

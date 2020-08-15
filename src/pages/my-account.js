@@ -1,19 +1,16 @@
 import React from "react";
-import NavbarCustomer from "../components/NavbarCustomer";
+import Lottie from "react-lottie";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { LinkContainer } from "react-router-bootstrap";
 import Button from "react-bootstrap/Button";
+import NavbarCustomer from "../components/NavbarCustomer";
 import explorer from "./../assets/explorer-badge.png";
 import scout from "./../assets/scout-badge.png";
 import pioneer from "./../assets/pioneer-badge.png";
 import heritage from "./../assets/heritage-badge.png";
-import staycation from "./../assets/staycation-badge.png";
-import historian from "./../assets/historian-badge.png";
 import curator from "./../assets/curator-badge.png";
-import buzzed from "./../assets/buzzed-badge.png";
-import greenthumb from "./../assets/greenthumb-badge.png";
-import Lottie from "react-lottie";
 import * as animationData from "./../assets/example.json";
 
 function MyAccount(props) {
@@ -36,7 +33,9 @@ function MyAccount(props) {
         <div className="WelcomeCard">
           <h3>Welcome back, Jane!</h3>
           <p>Here's an overview of your locali account today...</p>
-          <Button href="/search/new%20farm" className="explore">Show me what's nearby</Button>
+          <LinkContainer to="/search/new%20farm">
+            <Button className="explore">Show me what's nearby</Button>
+          </LinkContainer>
         </div>
         <Container>
           <Row className="">

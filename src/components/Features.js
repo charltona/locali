@@ -20,7 +20,7 @@ function Features(props) {
               size={3}
               className="text-center text-lg-left"
             />
-            {item.buttonText && item.buttonLink && (<LinkContainer to={item.buttonLink}><Button style={{ background: "#ffaa01", borderColor: "#ffaa01", color: "#343a40" }}>Read more</Button></LinkContainer>)}
+            {item.buttonText && item.buttonLink && (<LinkContainer to={item.buttonLink}><Button style={{ background: "#ffaa01" }}>Read more</Button></LinkContainer>)}
           </Col>
           <Col>
             <figure className="Features__image-container">

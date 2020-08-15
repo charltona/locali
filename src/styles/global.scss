@@ -97,6 +97,17 @@ $grid-breakpoints: (
   }
 }
 
+.Features {
+  .btn {
+    background-color: #2f3676;
+    border-color: #2f3676;
+  }
+
+  .btn:hover {
+    background-color: #24295b;
+  }
+}
+
 .FeatureColumns {
   text-align: center;
 
@@ -363,6 +374,16 @@ $grid-breakpoints: (
 
     p {
       margin-bottom: 0;
+    }
+  }
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  .resources {
+    li {
+      margin-bottom: 10px;
     }
   }
 }
