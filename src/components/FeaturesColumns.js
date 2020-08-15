@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import barista from "../assets/business-barista.png";
 import phone from "../assets/customer-phone.png";
 import Button from "react-bootstrap/Button";
+import { LinkContainer } from "react-router-bootstrap";
 
 function FeaturesColumns(props) {
   return (
@@ -28,7 +29,7 @@ function FeaturesColumns(props) {
                   <li>One touch check-in - no need to maintain lists or spreadsheets</li>
                   <li>100% free to sign up</li>
                 </ul>
-                <Button href="/business-hub">View demo</Button>
+                <LinkContainer to="/business-hub"><Button>View demo</Button></LinkContainer>
             </Col>
             <Col xs={12} lg={6}>
                 <img src={phone} />
@@ -40,7 +41,7 @@ function FeaturesColumns(props) {
                     <li>Stay safe during COVID</li>
                     <li>Safe & secure - business don't see your data</li>
                 </ul>
-                <Button href="/search/new%20farm">View demo</Button>
+                <LinkContainer to="/search/new%20farm"><Button>View demo</Button></LinkContainer>
             </Col>
         </Row>
       </Container>
