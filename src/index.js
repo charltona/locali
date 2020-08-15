@@ -9,11 +9,14 @@ import {
 import CssBaseline from "@material-ui/core/CssBaseline";
 import SplashScreen from "./screens/splash";
 import Header from "components/header";
+import {ThemeProvider} from "@material-ui/core/styles";
+import theme from "./config/theme";
 
 
 export default function App(){
   return (
     <Router>
+      <ThemeProvider theme={theme}>
       <CssBaseline/>
       <Header/>
       <Switch>
@@ -33,6 +36,7 @@ export default function App(){
           <SplashScreen/>
         </Route>
       </Switch>
+      </ThemeProvider>
     </Router>
   )
 }
