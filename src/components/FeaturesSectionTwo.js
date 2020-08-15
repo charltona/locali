@@ -14,22 +14,20 @@ function FeaturesSection(props) {
       bgImageOpacity={props.bgImageOpacity}
     >
       <Container>
-        <SectionHeader
-          title={props.title}
-          subtitle={props.subtitle}
-          size={2}
-          spaced={true}
-          className="text-center"
-        />
         <Features
           items={[
             {
               title: "Explore",
               description:
                 "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-              image:
-                "https://uploads.divjoy.com/undraw-personal_settings_kihd.svg",
-            }
+              image: "https://uploads.divjoy.com/undraw-having_fun_iais.svg",
+            },
+            {
+              title: "Explore",
+              description:
+                "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
+              image: "https://uploads.divjoy.com/undraw-balloons_vxx5.svg",
+            },
           ]}
         />
       </Container>

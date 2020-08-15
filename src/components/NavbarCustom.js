@@ -15,51 +15,23 @@ function NavbarCustom(props) {
       <Container>
         <LinkContainer to="/">
           <Navbar.Brand>
-            <img
-              className="d-inline-block align-top"
-              src={props.logo}
-              alt="Logo"
-              height="30"
-            />
+            <p className="logo">locali</p>
           </Navbar.Brand>
         </LinkContainer>
 
         <Navbar.Toggle aria-controls="navbar-nav" className="border-0" />
         <Navbar.Collapse id="navbar-nav" className="justify-content-end">
           <Nav>
-            {auth.user && (
-              <NavDropdown id="dropdown" title="Account" alignRight={true}>
-                <LinkContainer to="/dashboard">
-                  <NavDropdown.Item active={false}>Dashboard</NavDropdown.Item>
+              <Nav.Item>
+                <LinkContainer to="/business-hub">
+                  <Nav.Link active={false}>For Businesses</Nav.Link>
                 </LinkContainer>
-
-                <LinkContainer to="/settings/general">
-                  <NavDropdown.Item active={false}>Settings</NavDropdown.Item>
-                </LinkContainer>
-
-                <Dropdown.Divider />
-
-                <LinkContainer to="/auth/signout">
-                  <NavDropdown.Item
-                    active={false}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      auth.signout();
-                    }}
-                  >
-                    Sign out
-                  </NavDropdown.Item>
-                </LinkContainer>
-              </NavDropdown>
-            )}
-
-            {!auth.user && (
+              </Nav.Item>
               <Nav.Item>
                 <LinkContainer to="/auth/signin">
                   <Nav.Link active={false}>Sign in</Nav.Link>
                 </LinkContainer>
               </Nav.Item>
-            )}
           </Nav>
         </Navbar.Collapse>
       </Container>

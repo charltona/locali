@@ -28,6 +28,7 @@ function NewsletterSection(props) {
           <Col xs={12} lg={6} className="mt-4 mt-lg-0">
             <Newsletter
               parentColor={props.color}
+              buttonColor={props.buttonColor}
               buttonText={props.buttonText}
               inputPlaceholder={props.inputPlaceholder}
               subscribedMessage={props.subscribedMessage}
