@@ -26,13 +26,15 @@ function MyAccount(props) {
     }
   };
 
+  const [claimed, toggleClaimed] = React.useState(false);
+
   return (
     <div style={{ padding: "50px", width: "100%" }} className="MyAccount">
       <Container>
         <h1>My Account</h1>
         <NavbarCustomer />
         <div className="WelcomeCard">
-          <h3>Welcome back, GovHacker!</h3>
+          <h3>Welcome back, John!</h3>
           <p>Here's an overview of your locali account today...</p>
         </div>
         <Container>
@@ -44,16 +46,16 @@ function MyAccount(props) {
               </div>
               <form>
                   <label for="fname">First name</label>
-                  <input type="text" id="fname" name="fname" value="Gov"/>
+                  <input type="text" id="fname" name="fname" value="John" disabled="disabled"/>
                   <label for="lname">Last name</label>
-                  <input type="text" id="lname" name="lname" value="Hack"/>
+                  <input type="text" id="lname" name="lname" value="Appleby" disabled="disabled"/>
                   <label for="address">Address</label>
-                  <input type="text" id="address" name="address" value="42 Wallaby Way, Sydney NSW 2000" />
+                  <input type="text" id="address" name="address" value="42 Wallaby Way, Sydney NSW 2000" disabled="disabled"/>
                   <label for="phone">Phone number</label>
-                  <input type="text" id="phone" name="phone" value="1234 5678" />
+                  <input type="text" id="phone" name="phone" value="1234 1324" disabled="disabled"/>
                   <label for="phone">Subscribe me to emails and updates</label>
                   <input type="checkbox" checked></input>
-                  <Button variant="yellow" className="update">Update details</Button>
+                  <Button variant="yellow" className="update">Verify with greenID✅</Button>
               </form>
               <div className="Disclaimer">
                 <em>We never share your personal data with businesses.</em>
@@ -77,7 +79,7 @@ function MyAccount(props) {
                 <Col sm={4} xs={6} className="Badge">
                   <img src={curator} className="grow"></img>
                 </Col>
-                <Col sm={4} xs={6} className="Badge">
+                {claimed && <Col sm={4} xs={6} className="Badge">
                   <Lottie
                     options={defaultOptions}
                     height={144}
@@ -86,11 +88,12 @@ function MyAccount(props) {
                     isPaused={false}
                   />
                 </Col>
+                }
               </Row>
-              <div className="Unclaimed">
+              {!claimed && <div className="Unclaimed">
                 <p>You have (1) unclaimed badge</p>
-                <Button variant="yellow">Claim your badge!</Button>
-              </div>
+                <Button variant="yellow" onClick={() => toggleClaimed(true)}>Claim your badge!</Button>
+              </div>}
             </Col>
           </Row>
         </Container>

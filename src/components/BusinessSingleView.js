@@ -9,6 +9,8 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import { covidSafeOptions } from "../helpers/capacity";
 import Toast from "react-bootstrap/Toast";
+import { LinkContainer } from "react-router-bootstrap";
+import Nav from "react-bootstrap/Nav";
 
 function BusinessSingleView(props) {
   let result = props.result;
@@ -66,7 +68,11 @@ function BusinessSingleView(props) {
 
             </Toast.Header>
             <Toast.Body>You've securely checked out of {result.name} and <br/>
-              earned your first badge! 🌟</Toast.Body>
+              earned your first badge! 🌟
+              <LinkContainer to="/my-account">
+                <Nav.Link active={false}>View My Account</Nav.Link>
+              </LinkContainer>
+            </Toast.Body>
           </Toast>
         </Row>
       </Container>
