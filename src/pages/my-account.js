@@ -26,13 +26,15 @@ function MyAccount(props) {
     }
   };
 
+  const [claimed, toggleClaimed] = React.useState(false);
+
   return (
     <div style={{ padding: "50px", width: "100%" }} className="MyAccount">
       <Container>
         <h1>My Account</h1>
         <NavbarCustomer />
         <div className="WelcomeCard">
-          <h3>Welcome back, GovHacker!</h3>
+          <h3>Welcome back, John!</h3>
           <p>Here's an overview of your locali account today...</p>
         </div>
         <Container>
@@ -77,7 +79,7 @@ function MyAccount(props) {
                 <Col sm={4} xs={6} className="Badge">
                   <img src={curator} className="grow"></img>
                 </Col>
-                <Col sm={4} xs={6} className="Badge">
+                {claimed && <Col sm={4} xs={6} className="Badge">
                   <Lottie
                     options={defaultOptions}
                     height={144}
@@ -86,11 +88,12 @@ function MyAccount(props) {
                     isPaused={false}
                   />
                 </Col>
+                }
               </Row>
-              <div className="Unclaimed">
+              {!claimed && <div className="Unclaimed">
                 <p>You have (1) unclaimed badge</p>
-                <Button variant="yellow">Claim your badge!</Button>
-              </div>
+                <Button variant="yellow" onClick={() => toggleClaimed(true)}>Claim your badge!</Button>
+              </div>}
             </Col>
           </Row>
         </Container>
