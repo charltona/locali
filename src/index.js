@@ -17,6 +17,18 @@ export default function App(){
       <CssBaseline/>
       <Header/>
       <Switch>
+        <Route path="/search">
+          <h1>Business Results Page</h1>
+        </Route>
+        <Route path="/check-in">
+          <h1>Single Business Listing Page</h1>
+        </Route>
+        <Route path="/user">
+          <h1>User Profile Page</h1>
+        </Route>
+        <Route path="/dashboard">
+          <h1>Business Dashboard Page</h1>
+        </Route>
         <Route path="/">
           <SplashScreen/>
         </Route>
