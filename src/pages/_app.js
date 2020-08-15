@@ -15,6 +15,7 @@ import NotFoundPage from "./not-found.js";
 import Footer from "./../components/Footer";
 import "./../util/analytics.js";
 import { ProvideAuth } from "./../util/auth.js";
+import CustomerHub from "./customer-hub";
 
 function App(props) {
   return (
@@ -40,6 +41,8 @@ function App(props) {
             <Route exact path="/my-account" component={MyAccount} />
 
             <Route exact path="/business-hub" component={BusinessHub} />
+
+            <Route exact path="/search/:name" component={CustomerHub} />
 
             <Route exact path="/dashboard" component={DashboardPage} />
 
