@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import "./HeroSection2.scss";
 import human from "./../assets/human.png";
 import human2 from "./../assets/human2.png";
+import BusinessSearch from "./../components/BusinessSearch";
 
 function HeroSection2(props) {
   return (
@@ -25,6 +26,7 @@ function HeroSection2(props) {
           spaced={true}
           className="text-center"
         />
+        <BusinessSearch />
         <Button
           variant={props.buttonOneColor}
           size="lg"

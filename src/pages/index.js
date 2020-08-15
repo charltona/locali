@@ -5,8 +5,6 @@ import FeaturesSectionTwo from "./../components/FeaturesSectionTwo";
 import NewsletterSection from "./../components/NewsletterSection";
 import FeaturesColumns from "./../components/FeaturesColumns";
 import { useRouter } from "./../util/router.js";
-import BusinessSearch from "../components/BusinessSearch";
-import Section from "../components/Section";
 import Container from "react-bootstrap/Container";
 
 function IndexPage(props) {
@@ -34,10 +32,6 @@ function IndexPage(props) {
           router.push("/my-account");
         }}
       />
-      <Container className="business-search">
-        <BusinessSearch/>
-      </Container>
-
       <FeaturesSection
         bg="white"
         textColor="dark"

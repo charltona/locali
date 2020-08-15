@@ -60,6 +60,7 @@ $grid-breakpoints: (
   > * {
     flex-shrink: 0;
   }
+  font-family: 'Alata', sans-serif;
 }
 
 .hero2-section-container {
@@ -200,6 +201,15 @@ $grid-breakpoints: (
 
 .yellow {
   background-color: $yellow;
+}
+
+.BusinessSearch {
+  max-width: 333px;
+  margin: 0 auto 30px;
+
+  .btn.btn-primary {
+    margin: 0;
+  }
 }
 
 .grow { transition: all .2s ease-in-out; }
