@@ -9,6 +9,7 @@ import pins from "../assets/qv-pin.png";
 import time from "../assets/qv-time.png";
 import Button from "react-bootstrap/Button";
 import CountUp from "react-countup";
+import { LinkContainer } from "react-router-bootstrap";
 import { generateRandomCapacity, getRandomInt } from "../helpers/capacity";
 
 function BusinessHub(props) {
@@ -17,9 +18,15 @@ function BusinessHub(props) {
       <Container>
         <h1>Business Dashboard</h1>
         <NavbarBusinessHub />
-        <div className="WelcomeCard">
-          <h3>Welcome back, Test Cafe!</h3>
-          <p>Your locali data insights are below...</p>
+          <div className="WelcomeCard">
+            <h3>Welcome back, Test Cafe!</h3>
+            <p>Your locali data insights are below...</p>
+            <div className="announcement">
+              <p className="notification-text bold"><span className="notification">!</span>Update: There have been recent cases of COVID-19 in your area.</p>
+              <p className="notification-text">Stay up to date and get tips on how to protect your employees and customers in our COVIDSafe portal.</p>
+              <LinkContainer to="/covid-safe"><Button>View COVIDSafe Tips</Button></LinkContainer>
+            </div>
+          </div>
           <Container className="Data">
             <Row className="align-items-center">
               <Col xs={12} lg={4} className="Col">
@@ -80,7 +87,6 @@ function BusinessHub(props) {
               </Col>
             </Row>
           </Container>
-        </div>
       </Container>
     </div>
   );

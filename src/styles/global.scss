@@ -175,6 +175,40 @@ $grid-breakpoints: (
   .WelcomeCard {
     margin-top: 30px;
     border-radius: 10px;
+
+    .btn {
+      margin-top: 0;
+      margin-bottom: 0;
+      background-color: $yellow;
+      border-color: $yellow;
+      color: $dark;
+    }
+
+    .notification {
+      font-weight: bold;
+      color: #3cb46e;
+      border: 2px solid #3cb46e;
+      border-radius: 50%;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      margin-right: 10px;
+    }
+
+    .notification-text {
+      color: #3cb46e;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .announcement {
+      border: 2px dashed #3cb46e;
+      padding: 10px;
+      margin: 30px 0;
+    }
   }
 
   .Data {
