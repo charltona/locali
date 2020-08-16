@@ -1,4 +1,4 @@
-#Locali
+# Locali
 
 *locali* is handy app to connect local businesses and residents, providing a safe and secure way for customers to check in, while also providing crucial data to businesses and the government. *locali* connects local business and residents, encouraging them to shop, explore and play... 'locali'! 
 
@@ -8,7 +8,7 @@ We decided that isolation and lock down can feel pretty meaningless - so we want
 
 [![Watch video](https://i.imgur.com/H9ap63C.jpg)](https://www.youtube.com/watch?v=ScMzIvxBSi4)
 
-# Problems we identified
+## Problems we identified
 * Local businesses are suffering during COVID
 * There's no incentive for people to use the COVID safe app
 * Data in this area is being maintained separately by businesses. There is a fragmented approach and it puts additional stress on businesses, who are already having a hard time to stay afloat
@@ -17,7 +17,7 @@ We decided that isolation and lock down can feel pretty meaningless - so we want
 
 ![locali mockup](https://i.imgur.com/FyqSbas.png)
 
-# How locali solves these problems
+## How locali solves these problems
 * Providing a platform for local businesses to connect directly with customers and offer discounts
 * Creating a gamification and reward system for customers, which incentivize check-ins
 * Taking the burden of data collection off businesses
@@ -26,7 +26,7 @@ We decided that isolation and lock down can feel pretty meaningless - so we want
 
 ![locali mockup](https://i.imgur.com/UBqtu4M.png)
 
-# Features
+## Features
 * One-time sign up and verification - this ensures customer details are legitimate
 * Search your suburb to find discounts at local businesses, nearby parks, public art pieces and historic landmarks
 * Badge and achievement system - earn badges when checking in to certain businesses or landmarks
@@ -37,10 +37,10 @@ We decided that isolation and lock down can feel pretty meaningless - so we want
 
 ![locali desktop mockup](https://i.imgur.com/sA9elGA.jpg)
 
-# Tech used
+## Tech used
 HTML, SCSS, React, React Bootstrap, Lottie
 
-# Additional features & stretch goals
+## Additional features & stretch goals
 Due to the nature of GovHack, there were many features we thought of and would love to implement, but did not have time for. These include:
 
 * GPS functionality and map integration to allow users to spot *locali* businesses and landmarks in their area
@@ -53,13 +53,12 @@ Due to the nature of GovHack, there were many features we thought of and would l
 
 * 'Staycation' or day planner for residents
 
-# Team Members
+## Team Members
 👨‍💻 [Aaron Charlton](https://github.com/charltona) | Full Stack Developer
 
 👨‍🎨 [Ivan von Christ](https://github.com/ivonchrist) | UX/UI & Video Designer
 
 👩‍💻 [Genevieve Carter](https://github.com/genevieveloreal) | Front End Developer
-
 
 ## 👉 Get Started
 
