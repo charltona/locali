@@ -19,7 +19,7 @@ function FeaturesColumns(props) {
     >
       <Container className="FeatureColumns">
         <Row className="align-items-center">
-            <Col xs={12} lg={6}>
+            <Col xs={12} md={6} className="Col">
                 <img src={barista} />
                 <h3><span>locali</span> for Businesses</h3>
                 <ul>
@@ -31,7 +31,7 @@ function FeaturesColumns(props) {
                 </ul>
                 <LinkContainer to="/business-hub"><Button>View demo</Button></LinkContainer>
             </Col>
-            <Col xs={12} lg={6}>
+            <Col xs={12} md={6} className="Col">
                 <img src={phone} />
                 <h3><span>locali</span> for Residents</h3>
                 <ul>

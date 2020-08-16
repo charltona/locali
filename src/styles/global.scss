@@ -111,6 +111,14 @@ $grid-breakpoints: (
 .FeatureColumns {
   text-align: center;
 
+  .Col {
+    border-width: 0px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 50px;
+    }
+  }
+
   img {
     margin-bottom: 20px;
   }
