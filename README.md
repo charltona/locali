@@ -1,3 +1,66 @@
+#Locali
+
+*locali* is handy app to connect local businesses and residents, providing a safe and secure way for customers to check in, while also providing crucial data to businesses and the government. *locali* connects local business and residents, encouraging them to shop, explore and play... 'locali'! 
+
+For residents, this is a handy guide to beat boredom, support local businesses, stay safe and connected within their community both during and after COVID. *locali* also empowers businesses by providing them with a platform to engage with their local community in a COVID-safe way.
+
+We decided that isolation and lock down can feel pretty meaningless - so we wanted to add some gamification through an achievement system. Residents earn badges when they securely check in to destinations via *locali*.
+
+[![Watch video](https://i.imgur.com/H9ap63C.jpg)](https://www.youtube.com/watch?v=ScMzIvxBSi4)
+
+# Problems we identified
+* Local businesses are suffering during COVID
+* There's no incentive for people to use the COVID safe app
+* Data in this area is being maintained separately by businesses. There is a fragmented approach and it puts additional stress on businesses, who are already having a hard time to stay afloat
+* Residents are unsure about where and how their data is being stored
+* Residents are feeling isolated and are staying indoors more which has an impact on mental and physical health
+
+![locali mockup](https://i.imgur.com/FyqSbas.png)
+
+# How locali solves these problems
+* Providing a platform for local businesses to connect directly with customers and offer discounts
+* Creating a gamification and reward system for customers, which incentivize check-ins
+* Taking the burden of data collection off businesses
+* Giving customers and residents confidence that their data is not being exposed to third parties, or other customers (i.e. paper lists with names and phone numbers on a café counter)
+* Offering a fun experience during uncertain times and giving meaning to COVID life
+
+![locali mockup](https://i.imgur.com/UBqtu4M.png)
+
+# Features
+* One-time sign up and verification - this ensures customer details are legitimate
+* Search your suburb to find discounts at local businesses, nearby parks, public art pieces and historic landmarks
+* Badge and achievement system - earn badges when checking in to certain businesses or landmarks
+* Business dashboard - businesses can set their capacity limit based on restrictions, view average time spent in store per customer
+* COVIDSafe knowledge hub with resources for businesses
+* Improved tracking of potential COVID contacts
+* No more paper lists or spreadsheets with personal data stored on them! 😍
+
+![locali desktop mockup](https://i.imgur.com/sA9elGA.jpg)
+
+# Tech used
+HTML, SCSS, React, React Bootstrap, Lottie
+
+# Additional features & stretch goals
+Due to the nature of GovHack, there were many features we thought of and would love to implement, but did not have time for. These include:
+
+* GPS functionality and map integration to allow users to spot *locali* businesses and landmarks in their area
+
+* Extended dashboard functionality allowing businesses to offer discount codes when badges are unlocked
+
+* Admin dashboard view to enable authorised government employees to view data per business or landmark, including check-in and capacity statistics
+
+* Suburb reporting features to allow authorised government employees to generate reports to allow for easier identification of severely impacted businesses
+
+* 'Staycation' or day planner for residents
+
+# Team Members
+👨‍💻 [Aaron Charlton](https://github.com/charltona) | Full Stack Developer
+
+👨‍🎨 [Ivan von Christ](https://github.com/ivonchrist) | UX/UI & Video Designer
+
+👩‍💻 [Genevieve Carter](https://github.com/genevieveloreal) | Front End Developer
+
+
 ## 👉 Get Started
 
 Install dependencies
