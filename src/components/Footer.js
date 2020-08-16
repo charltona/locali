@@ -21,15 +21,7 @@ function Footer(props) {
           </div>
           <div className="links right">
             <Link to="/about">About</Link>
-            <Link to="/faq">FAQ</Link>
             <Link to="/contact">Contact</Link>
-            <a
-              target="_blank"
-              href="https://medium.com"
-              rel="noopener noreferrer"
-            >
-              Blog
-            </a>
           </div>
           <div className="social right">
             <a

@@ -25,33 +25,24 @@ function TeamBiosSection(props) {
           items={[
             {
               avatar: "https://uploads.divjoy.com/pravatar-150x-68.jpeg",
-              name: "John Smith",
-              role: "Software Engineer",
+              name: "Aaron Charlton",
+              role: "Full Stack Developer",
               bio:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo.",
-              twitterUrl: "https://twitter.com",
-              facebookUrl: "https://facebook.com",
-              linkedinUrl: "https://linkedin.com",
+                "Fixer of things and lover of coffee, energy drinks and other things that make you a lil bit shakey when you need a buzz."
             },
             {
               avatar: "https://uploads.divjoy.com/pravatar-150x-35.jpeg",
-              name: "Lisa Zinn",
-              role: "Software Engineer",
+              name: "Ivan von Christ",
+              role: "UX/UI & Video Designer",
               bio:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!",
-              twitterUrl: "https://twitter.com",
-              facebookUrl: "https://facebook.com",
-              linkedinUrl: "https://linkedin.com",
+                "Winner of the Australian Goodboy Awards 5 years running. The Picasso of After Effects. Curator of dreams and maker of memes."
             },
             {
               avatar: "https://uploads.divjoy.com/pravatar-150x-16.jpeg",
-              name: "Diana Low",
-              role: "Designer",
+              name: "Genevieve Carter",
+              role: "Front End Developer",
               bio:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!",
-              twitterUrl: "https://twitter.com",
-              facebookUrl: "https://facebook.com",
-              linkedinUrl: "https://linkedin.com",
+                "I asked Ivan to write me a bio and this was the result: 'I can't think of anything' - Ivan, 2020"
             },
           ]}
         />

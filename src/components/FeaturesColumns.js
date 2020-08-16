@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import barista from "../assets/business-barista.png";
-import phone from "../assets/customer-phone.png";
+import phone from "../assets/blobaustralia.png";
 import Button from "react-bootstrap/Button";
 import { LinkContainer } from "react-router-bootstrap";
 
