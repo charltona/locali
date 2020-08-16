@@ -6,7 +6,7 @@ For residents, this is a handy guide to beat boredom, support local businesses, 
 
 We decided that isolation and lock down can feel pretty meaningless - so we wanted to add some gamification through an achievement system. Residents earn badges when they securely check in to destinations via *locali*.
 
-[![Watch video](https://i.imgur.com/H9ap63C.jpg)](https://www.youtube.com/watch?v=ScMzIvxBSi4)
+[![Watch video](https://i.imgur.com/H9ap63C.jpg)](https://youtu.be/7COv9oN8kMI)
 
 ## Problems we identified
 * Local businesses are suffering during COVID
