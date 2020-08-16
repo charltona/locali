@@ -25,7 +25,7 @@ We decided that isolation and lock down can feel pretty meaningless - so we want
 * Offering a fun experience during uncertain times and giving meaning to COVID life
 
 ![locali mockup](https://i.imgur.com/UBqtu4M.png)
-![locali gif](http://locali.bigsunday.co/static/media/scroll_1.gif)
+![locali gif](https://locali.bigsunday.co/static/media/scroll_1.gif)
 
 ## Features
 * One-time sign up and verification - this ensures customer details are legitimate
