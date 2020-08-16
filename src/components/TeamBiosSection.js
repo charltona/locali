@@ -42,7 +42,7 @@ function TeamBiosSection(props) {
               name: "Genevieve Carter",
               role: "Front End Developer",
               bio:
-                "I asked Ivan to write me a bio and this was the result: 'I can't think of anything' - Ivan, 2020"
+                "Pro-cat overlord society. Friend of feathers. Absolute React BEAST. Full of life, laughs and love. (She'll hate me for this)."
             },
           ]}
         />
